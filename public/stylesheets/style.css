@@ -1,0 +1,147 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+#left{
+  height: 100%;
+  width: 25%;
+  background-color: #f3f3f3;
+}
+#folder{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+#icons{
+  display: flex;
+  gap: 10px;
+}
+#icons a{
+  text-decoration: none;
+  color: #000;
+}
+#files{
+  margin-top: 25px;
+  padding: 0 20px;
+}
+.file{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: 5px;
+}
+.file a{
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.file:hover{
+  background-color: #dadada;
+}
+.file h4 i{
+  margin-right: 4px;
+}
+.ficons{
+  display: flex;
+  gap: 10px;
+}
+.file .ficons i{
+  opacity: 0;
+}
+.file:hover i{
+  opacity: 1;
+}
+#right{
+  height: 100%;
+  width: 75%;
+  background-color: #fff;
+}
+#right small{
+  opacity: .2;
+  font-weight: 600;
+  font-size: 16px;
+}
+.fileform{
+  display: none;
+  width: 100%;
+}
+.fileform form{
+  width: 100%;
+}
+
+.fileform form input{
+  width: 70%;
+  outline-color: royalblue;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+.folderform{
+  display: none;
+  width: 100%;
+}
+.folderform form{
+  width: 100%;
+}
+
+.folderform form input{
+  width: 70%;
+  outline-color: royalblue;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+#rheader{
+  width: 100%;
+}
+
+#rheader .opened{
+  font-weight: 600;
+  width: fit-content;
+  padding: 20px 30px;
+  background-color: #dadada;
+}
+
+.opened i{
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#right h3{
+  padding: 20px;
+}
+
+#content{
+  width: 100%;
+  height: 89%;
+}
+
+#content textarea{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: consolas;
+}
