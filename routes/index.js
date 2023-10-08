@@ -8,6 +8,11 @@ router.get('/', function(req, res, next) {
     res.render('index', { files });
   })
 });
+router.post("/change/:oldname", function(req, res){
+  fs.rename(`./files/${req.params.oldname}`, `./files/${req.body.filename}`, function(err){
+    res.redirect("/");
+  })
+});
 router.get('/filecreate', function(req, res, next) {
   fs.writeFile(`./files/${req.query.filename}`, "", function(err){
     if(err) throw err;
